@@ -15,9 +15,9 @@
 
 int between_extremes(size_t length, const int numbers[length]) {
     int min = numbers[0], max = numbers[0];
-    for(size_t i = 0; i < length; i++) {
-        if(numbers[i] < min) min = numbers[i];
-        if(numbers[i] > max) max = numbers[i];
+    for (size_t i = 0; i < length; i++) {
+        if (numbers[i] < min) min = numbers[i];
+        if (numbers[i] > max) max = numbers[i];
     }
     return max - min;
 }
