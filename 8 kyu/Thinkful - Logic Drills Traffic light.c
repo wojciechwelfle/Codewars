@@ -16,4 +16,3 @@ enum light {
 enum light update_light(enum light light) {
     return light == GREEN ? YELLOW : (light == RED ? GREEN : RED);
 }
-x
