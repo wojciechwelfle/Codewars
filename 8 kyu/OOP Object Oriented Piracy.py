@@ -39,4 +39,4 @@ class Ship:
         self.crew = crew
 
     def is_worth_it(self):
-        return self.crew * 1.5 * self.draft > 20
+        return self.draft - self.crew * 1.5 > 20
