@@ -14,17 +14,17 @@
 class Solution {
     static String toCamelCase(String s) {
         StringBuilder res = new StringBuilder();
-        boolean isNewLetter = false;
+        boolean isFirstLetter = false;
         for (char c : s.toCharArray()) {
             if (Character.isLetter(c)) {
-                if (isNewLetter) {
+                if (isFirstLetter) {
                     res.append(Character.toUpperCase(c));
-                    isNewLetter = false;
+                    isFirstLetter = false;
                 } else {
                     res.append(c);
                 }
             } else {
-                isNewLetter = true;
+                isFirstLetter = true;
             }
         }
         return res.toString();
