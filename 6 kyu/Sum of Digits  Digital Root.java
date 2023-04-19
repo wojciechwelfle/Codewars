@@ -13,7 +13,7 @@
 */
 
 
-class DRoot1 {
+class DRoot {
     public static int digital_root(int n) {
         int res = 0;
         for (char i : String.valueOf(n).toCharArray()) {
